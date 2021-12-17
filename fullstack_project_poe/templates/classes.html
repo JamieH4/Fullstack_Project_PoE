@@ -1,0 +1,114 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<title>PoE - Classes</title>
+</head>
+<body class="bg-dark">
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{url_for('static', filename='duelist.jpg')}}" alt="duelist class" class="d-block w-75 mx-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="{{url_for('static', filename='marauder.jpg')}}" alt="marauder class" class="d-block w-75 mx-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="{{url_for('static', filename='ranger.jpg')}}" alt="ranger class" class="d-block w-75 mx-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="{{url_for('static', filename='shadow.jpg')}}" alt="shadow class" class="d-block w-75 mx-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="{{url_for('static', filename='templar.jpg')}}" alt="templar class" class="d-block w-75 mx-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="{{url_for('static', filename='witch.jpg')}}" alt="witch class" class="d-block w-75 mx-auto">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark"></span>
+        </button>
+    </div>
+
+    <div class="container text-success text-center p-5">
+        <h1>These are the classess you can choose to play as in Path of Exile</h1>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col-1 container p-2 my-2 border border-danger text-center">
+            <img src="{{url_for('static', filename='duelist.png')}}" alt="duelist" class="img-fluid">
+        </div>
+        <div class="col-10 container p-4 my-4 text-white text-center border border-danger">
+            <h3 class="text-center text-success">Duelist</h3>
+            <p>Quick to anger, even quicker to strike, the Duelist is a man of haughty character and deadly skill. He is brash and confident. Some might call him arrogant, but he backs up his taunts with a keen blade and a callous heart. The Duelist is a thrill-seeker, always sniffing out conflict and picking fights. This habit has gotten him in trouble countless times, but he's always survived with skill and guile. The Duelist is a master of close-quarters combat, dealing lethal damage with a wide array of weapons while escaping most harm. Women swoon at the sight of him, men tremble at the thought of him, and few that face him in battle live to tell the tale.</p>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-1 container p-2 my-2 border border-warning text-center">
+            <img src="{{url_for('static', filename='marauder.png')}}" alt="marauder" class="img-fluid">
+        </div>
+        <div class="col-10 container p-4 my-4 text-white text-center border border-warning">
+            <h3 class="text-center text-success">Marauder</h3>
+            <p>His visage marked equally by tribal tattoos and the scars of battle, the imposing Marauder is a survivor of many bloody battles. The clanging, scraping and screaming of war is music to his ears, and he delights in crushing the skulls of his foes underfoot. He is a monster of a man, towering above his cohorts and quick to show his strength and ferocity. A master armsman, the Marauder is versed in many weapons, but he generally prefers the heft of a heavy two-handed axe or mace. He plunges into battle with a cry of delight, and woe be to anyone foolish enough to get in his way.</p>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-1 container p-2 my-2 border border-primary text-center">
+            <img src="{{url_for('static', filename='ranger.png')}}" alt="ranger" class="img-fluid">
+        </div>
+        <div class="col-10 container p-4 my-4 text-white text-center border border-primary">
+            <h3 class="text-center text-success">Ranger</h3>
+            <p>Padding silently through the dark forest, the lithe and stealthy ranger is at home. Long eschewing the company of men, she has turned her affections to the deep and wild wilderness, and she travels alone. Her time out away from the comfortable trappings of civilization has hardened her body and her spirit. It has also granted her the time and necessity to master a wide range of weapons. Despite her prowess on the battlefield, the Ranger is most comfortable hidden from view, felling her opponents from a distance with her mighty long bow. When cornered though, she fights as fiercely as a tigress with sword, dagger, mace, or whatever is at hand.</p>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-1 container p-2 my-2 border border-danger text-center">
+            <img src="{{url_for('static', filename='shadow.png')}}" alt="shadow" class="img-fluid">
+        </div>
+        <div class="col-10 container p-4 my-4 text-white text-center border border-danger">
+            <h3 class="text-center text-success">shadow</h3>
+            <p>A flicker of movement, a knife from the dark. By the time you've seen him, it's already too late. The Shadow kills silently, without hesitation, without mercy. He is versed in many weapons, but prefers ambush and subterfuge. Hundreds have met their deaths shrieking in his traps. The Shadow has come from the Guild of the Night in Oriath for one purpose: to inflict pain and suffering on anyone who's wronged him. Exile is merely an inconvenience.</p>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-1 container p-2 my-2 border border-warning text-center">
+            <img src="{{url_for('static', filename='templar.png')}}" alt="templar" class="img-fluid">
+        </div>
+        <div class="col-10 container p-4 my-4 text-white text-center border border-warning">
+            <h3 class="text-center text-success">Templar</h3>
+            <p>He is wizened and gray, but don't let that fool you. His humble clothing hides a powerful, sinuous physique, honed by many years of hard labor and asceticism. Age has granted the Templar an older man's wisdom and tact, qualities he combines with surprisingly well-preserved physical strength. The mighty Templar bests his foes with weapons of steel, and a shield of righteousness. His great bravery and purpose drive him headlong into the fray, disdaining risk with dogged zeal. Some might look upon the Templar's bravado as foolhardiness, but they simply do not know what it means to be a man of faith. On Wraeclast, where faith and hope are dim, he is a shining, towering beacon.</p>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-1 container p-2 my-2 border border-primary text-center">
+            <img src="{{url_for('static', filename='witch.png')}}" alt="witch" class="img-fluid">
+        </div>
+        <div class="col-10 container p-4 my-4 text-white text-center border border-primary">
+            <h3 class="text-center text-success">Witch</h3>
+            <p>They laughed at her. They pointed fingers, pulled their children away and whispered in the streets. They burned her home and drove her from the village. She got even. Flame, shadow, disease and frost. These are the tools of the mighty witch and she wields them with a reckless power she can barely control. Though she may look frail and delicate, do not underestimate her. Many have, and they are counted among the burned and withered corpses in her wake.</p>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-1 container p-2 my-2 border border-danger text-center">
+            <img src="{{url_for('static', filename='scion.png')}}" alt="scion" class="img-fluid">
+        </div>
+        <div class="col-10 container p-4 my-4 text-white text-center border border-danger">
+            <h3 class="text-center text-success">Scion</h3>
+            <p>It was me, who was chosen to control the massive mysterious power from darkness. I have been chained up long. But the physical cage will no longer confine me. My talent will break though it and flicker, brilliantly.</p>
+        </div>
+    </div>
+
+{% endblock %}
